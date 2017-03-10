@@ -1,0 +1,9 @@
+list of z-index positions for all components
+
+navbar-container: 100
+
+navbar-mobile-links: 200 
+
+navbar-brand: 300
+
+navbar-sandwich: 300

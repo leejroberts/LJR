@@ -1,0 +1,118 @@
+
+// NavBar ( Header )
+
+.navbar-container {
+  color: white;
+  background-color: black;
+  height: 6rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  position: fixed;
+  z-index: 100; // ensures it sits above all pages
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-brand-custom {
+  background-image: image-url('trans-white-brand-sketch.png');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 70px;
+  z-index: 300; //places above navbar-container and .nav-mobile-links-full
+  display: inline-block;
+}
+
+.nav-link-div {
+  display: inline-block;
+}
+
+.nav-toggle-div {
+  display: inline-block;
+  float: right;
+}
+
+
+.nav-inline-list {
+  @extend .inline-list;
+  padding-top: .8rem;
+  font-size: 2.7rem;
+  padding-left: 9rem;
+  li {
+    padding-left: 3rem;
+  }
+  li > a {
+      text-decoration: none;
+      
+  }
+}
+
+.nav-sandwich-div {
+  position: fixed;
+  z-index: 300;
+  top: 7px;
+  right: 7px;
+  padding: 1.3rem;
+  background-color: gray;
+  .toggle-line {
+    transition: .3s ease;
+    display: block;
+    background-color: white;
+    width: 2.8rem;
+    height: 2px;
+    margin-top: .6rem;
+    &:first-child {
+      margin-top: 0rem;
+    }
+    &:last-child {
+      
+    }
+  }
+}
+
+// added via navbar.js to change sandwich to X
+.toggle-x {
+  // postition: relative;
+  // z-index: 200;
+  .toggle-line {
+    &:first-child {
+      transform: rotate( 45deg ) translate(5px, 6px );
+    }
+    &:nth-child( 2 ) {
+      background-color: transparent;  
+    }
+    &:last-child {
+      transform: rotate( -45deg ) translate(5px, -6px );
+    }
+  }
+}
+
+// only shows on xs for now sizing below is for xs
+.nav-mobile-full {
+  display: none;
+  position: fixed;
+  z-index: 200; // navbar-container below, navbar-brand, and sandwich above
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  & > ul {
+    padding-left: 0;
+    padding-top: 40rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4rem;
+    & > li {
+      padding-top: 2rem;
+      text-align: center;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+

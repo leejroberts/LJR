@@ -1,0 +1,43 @@
+
+<!-- NavBar (header) -->
+    
+  <%# LJR logo ( Keep outside navbar container ) %>
+  <div class="nav-brand-custom">
+    
+  </div>
+    
+  <%# navbar-container (only contains links and background color ) %>
+  <div class="navbar-container">
+    
+    <%# navbar links %>
+    <div class='nav-link-div hidden-xs'>
+      <ul class='nav-inline-list'>
+        <li><%= link_to 'About', '#' %></li>
+        <li><%= link_to 'Projects', '#' %></li>
+        <li><%= link_to 'Blog' %></li>
+        <li><%= button_to 'Contact', '#' %></li>
+      </ul>
+    </div>
+  
+  </div>  
+    
+  <%# navbar mobile sandwich ( toggles full screen links ) %>
+  <%# keep outside navbar container %>
+  <div class='nav-sandwich-div hidden-xs' id='sandwich'>
+    <div class="toggle-line" id='bar-1'></div>
+    <div class="toggle-line" id='bar-2'></div>
+    <div class="toggle-line" id='bar-3'></div>
+  </div>
+    
+  
+<%# Full screen nav for mobile toggled with sandwich %>  
+<div class="nav-mobile-full" id='nav-mobile'>
+  <ul>
+    <li><%= link_to 'Projects', '#' %></li>
+    <li><%= link_to 'About', '#' %></li>
+    <li><%= link_to 'Blog', '#' %></li>
+    <li><%= link_to 'Contact', '#' %></li>
+  </ul>
+</div>
+
+
