@@ -4,10 +4,11 @@
  */
 $font-size-base: 16px;
 
+@import 'variables_mixins'; // keep above bootstrap! ( used to change BS variables )
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'base';
-@import 'components';
-@import 'layout';
-@import 'navbar';
-@import 'utilities';
+@import 'base'; // basic global changes to ul, li, p, etc
+@import 'components'; // buttons, dropdowns, etc.
+@import 'layout'; // global layout styles
+@import 'navbar'; // header
+@import 'utilities'; // re-usable small classes and ID's for overrides JQuery addClass etc.

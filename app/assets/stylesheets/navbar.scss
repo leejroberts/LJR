@@ -2,9 +2,9 @@
 // NavBar ( Header )
 
 .navbar-container {
+  height: 120px;
   color: white;
   background-color: black;
-  height: 6rem;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
   position: fixed;
@@ -12,6 +12,9 @@
   top: 0;
   left: 0;
   right: 0;
+  @include breakpoint($sm) {
+   height: 6rem;  
+  }
 }
 
 .nav-brand-custom {
@@ -20,33 +23,37 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 60px;
-  width: 70px;
   z-index: 300; //places above navbar-container and .nav-mobile-links-full
   display: inline-block;
+  height: 120px;
+  width: 140px;
+  @include breakpoint($sm){
+    height: 60px;
+    width: 70px;
+  }
 }
 
 .nav-link-div {
   display: inline-block;
 }
 
-.nav-toggle-div {
-  display: inline-block;
-  float: right;
-}
-
-
 .nav-inline-list {
   @extend .inline-list;
-  padding-top: .8rem;
-  font-size: 2.7rem;
-  padding-left: 9rem;
-  li {
-    padding-left: 3rem;
-  }
-  li > a {
-      text-decoration: none;
-      
+  display: none;  // no display on phone
+  @include breakpoint($sm){ // larger than phone
+  display: inline;
+    font-size: 2.7rem;
+    padding-top: .8rem;
+    padding-left: 9rem;
+    li {
+      padding-left: 3rem;
+      &:last-child {
+        float: right;
+      }
+      & > a {
+          text-decoration: none;
+      }
+    }
   }
 }
 
@@ -55,21 +62,24 @@
   z-index: 300;
   top: 7px;
   right: 7px;
-  padding: 1.3rem;
-  background-color: gray;
+  padding-top: 2.2rem;
+  padding-right: 1.5rem;
   .toggle-line {
     transition: .3s ease;
     display: block;
     background-color: white;
-    width: 2.8rem;
-    height: 2px;
-    margin-top: .6rem;
+    width: 8rem;
+    height: .8rem;
+    margin-top: 1.5rem;
     &:first-child {
       margin-top: 0rem;
     }
     &:last-child {
       
     }
+  }
+  @include breakpoint($sm){
+    display: none;
   }
 }
 
@@ -79,13 +89,13 @@
   // z-index: 200;
   .toggle-line {
     &:first-child {
-      transform: rotate( 45deg ) translate(5px, 6px );
+      transform: rotate( 45deg ) translate(9px, 24px );
     }
     &:nth-child( 2 ) {
       background-color: transparent;  
     }
     &:last-child {
-      transform: rotate( -45deg ) translate(5px, -6px );
+      transform: rotate( -45deg ) translate(9px, -24px );
     }
   }
 }
