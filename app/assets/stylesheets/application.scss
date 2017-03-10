@@ -2,7 +2,7 @@
  *  require jquery-ui
  *= require_self
  */
-$font-size-base: 16px;
+
 
 @import 'variables_mixins'; // keep above bootstrap! ( used to change BS variables )
 @import "bootstrap-sprockets";

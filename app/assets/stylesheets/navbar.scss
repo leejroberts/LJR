@@ -40,20 +40,32 @@
 .nav-inline-list {
   @extend .inline-list;
   display: none;  // no display on phone
-  @include breakpoint($sm){ // larger than phone
-  display: inline;
-    font-size: 2.7rem;
+  @include breakpoint($sm){ // larger than phone 
+    display: inline-block;
+    font-size: 2.8rem;
     padding-top: .8rem;
     padding-left: 9rem;
     li {
       padding-left: 3rem;
-      &:last-child {
-        float: right;
-      }
       & > a {
           text-decoration: none;
       }
     }
+  }
+}
+
+.nav-btn-custom {
+  display: none; // no display on phone
+  @include breakpoint($sm) { // larger than phone
+    display: inline-block;
+    background-color: transparent;
+    color: gray;
+    font-size: 2rem;
+    padding: 1rem;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    border: 3px solid gray;
   }
 }
 
@@ -114,7 +126,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 4rem;
+    font-size: 8rem;
     & > li {
       padding-top: 2rem;
       text-align: center;
