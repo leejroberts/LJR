@@ -113,8 +113,10 @@
 // only shows on xs for now sizing below is for xs
 .nav-mobile-full {
   @include clean_link;
+  @include header-font;
   display: none;
   position: fixed;
+  top: 0;
   z-index: 200; // navbar-container below, navbar-brand, and sandwich above
   width: 100%;
   height: 100%;

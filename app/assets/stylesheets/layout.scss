@@ -40,8 +40,10 @@
   }
 }
 
-.col-center-all {
+// centers ONE boostrap cols
+// use for a row that has one centered col at all sizes
+.col-center {
   margin-left: auto;
   margin-right: auto;
-  float: none !important;
+  float: none !important; // overrides BS col float: left
 }
