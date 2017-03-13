@@ -1,22 +1,6 @@
 
 // NavBar ( Header )
 
-.navbar-container {
-  height: 120px;
-  color: white;
-  background-color: black;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  position: fixed;
-  z-index: 100; // ensures it sits above all pages
-  top: 0;
-  left: 0;
-  right: 0;
-  @include breakpoint($sm) {
-   height: 6rem;  
-  }
-}
-
 .nav-brand-custom {
   background-image: image-url('trans-white-brand-sketch.png');
   background-size: cover;
@@ -33,8 +17,20 @@
   }
 }
 
-.nav-link-div {
-  display: inline-block;
+.navbar-container {
+  height: 120px;
+  color: white;
+  background-color: black;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  position: fixed;
+  z-index: 100; // ensures it sits above all pages
+  top: 0;
+  left: 0;
+  right: 0;
+  @include breakpoint($sm) {
+   height: 7rem;  
+  }
 }
 
 .nav-inline-list {
@@ -42,11 +38,12 @@
   display: none;  // no display on phone
   @include breakpoint($sm){ // larger than phone 
     display: inline-block;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     padding-top: .8rem;
     padding-left: 9rem;
     li {
       padding-left: 3rem;
+      font-family: $headings-font-family;
       & > a {
           text-decoration: none;
       }
@@ -57,6 +54,7 @@
 .nav-btn-custom {
   display: none; // no display on phone
   @include breakpoint($sm) { // larger than phone
+    font-family: $headings-font-family;
     display: inline-block;
     background-color: transparent;
     color: gray;
