@@ -9,13 +9,13 @@
   
   <%# navbar links %>
   <ul class='nav-inline-list'>
-    <li><%= link_to 'About', '#' %></li>
-    <li><%= link_to 'Projects', '#' %></li>
-    <li><%= link_to 'Blog' %></li>
+    <li><%= link_to 'About', about_path %></li>
+    <li><%= link_to 'Projects', projects_path %></li>
+    <!--<li><%# link_to 'Blog' %></li>-->
   </ul>
   
   <%# right side contact button %>
-  <%= button_to 'Contact', '#', class:'nav-btn-custom' %>
+  <%= button_to 'Contact', contact_path, class:'nav-btn-custom' %>
 
 </div><%# ^ navbar-container %>  
   
@@ -30,11 +30,10 @@
 <%# Full screen nav for mobile toggled with sandwich %>  
 <div class="nav-mobile-full" id='nav-mobile'>
   <ul>
-    <li><%= link_to 'Projects', '#' %></li>
-    <li class="nav-line"></li>
-    <li><%= link_to 'About', '#' %></li>
-    <li><%= link_to 'Blog', '#' %></li>
-    <li><%= link_to 'Contact', '#' %></li>
+    <li><%= link_to 'About', about_path %></li>
+    <li><%= link_to 'Projects', projects_path %></li>
+    <!--<li><%# link_to 'Blog' %></li>-->
+    <li><%= link_to 'Contact', contact_path %></li>
   </ul>
 </div>
 

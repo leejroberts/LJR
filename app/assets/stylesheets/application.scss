@@ -12,3 +12,5 @@
 @import 'layout'; // global layout styles
 @import 'navbar'; // header
 @import 'utilities'; // re-usable small classes and ID's for overrides JQuery addClass etc.
+@import 'projects/index';
+@import 'projects/show';

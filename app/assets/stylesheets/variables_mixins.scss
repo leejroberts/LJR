@@ -6,20 +6,34 @@
 @import url('https://fonts.googleapis.com/css?family=Sanchez');
 
 // boostrap variables ========================
-$headings-font-family: 'Sanchez';
+// $headings-font-family: 'Sanchez';
 $btn-border-radius-base: 0;
 $font-size-base: 16px;
 
 
 // other variables ============================
 
+$base-background-color: #f5f5f5; // very light neutral gray
+
 // fonts ======================================
-// fonts I liked
-  // puritan++, sanchez++, fauna one+, libre franklin,
-// fonts that didn't work
-  //days one, doppio one, Kreon, hammersmith one, pt serif caption, ramabhadra, teko, vega, voltaire
-  //
+
+  // fonts I liked
+    // puritan++, sanchez++, libre franklin,
+    
 // mixins =====================================
+
+@mixin header-font {
+  font-family: 'Sanchez';
+}
+
+@mixin clean_link {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
 
 // responsive mixin created by (and borrowed from ) Tim Knight
 
@@ -38,3 +52,9 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   @media only screen and #{$query} { @content; }
 }
 
+
+// @mixin big-header {
+//   @mixin breakpoint($xs) {
+//     font-size: ;
+//   }
+// }

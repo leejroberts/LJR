@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+manup = Project.create( name: 'ManUp',
+                 description: "ManUp is a group based men's event app in the Vein of Meetup.com",
+                    features: 'Groups geocoded and searchable by location, mobile responsive views, comprehensive test suite',
+                  technology: 'Rails 5.0, ruby 2.3',
+                       image: 'app/assets/images/man-up.png')

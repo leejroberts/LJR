@@ -1,0 +1,32 @@
+
+// Project / Show 
+
+// .project-name_show {
+//   margin-top: 8rem; // phone
+//   font-size: 16rem;
+//   @include breakpoint($sm) { // bigger than phone
+//     margin-top: 3rem;
+//     text-align: center;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+
+.project-img-div_show {
+  @include breakpoint($xs) {
+    // margin-top: 5rem;
+  }
+}
+
+.project-image_show {
+  // margin-left: auto;
+  // margin-right: auto;
+}
+
+.project-about {
+  
+}
+
+.project-tech {
+  
+}

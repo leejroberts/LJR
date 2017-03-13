@@ -43,7 +43,7 @@
     padding-left: 9rem;
     li {
       padding-left: 3rem;
-      font-family: $headings-font-family;
+      @include header-font;
       & > a {
           text-decoration: none;
       }
@@ -112,12 +112,13 @@
 
 // only shows on xs for now sizing below is for xs
 .nav-mobile-full {
+  @include clean_link;
   display: none;
   position: fixed;
   z-index: 200; // navbar-container below, navbar-brand, and sandwich above
   width: 100%;
   height: 100%;
-  background-color: orange;
+  background-color: $gray-light;
   & > ul {
     padding-left: 0;
     padding-top: 40rem;
