@@ -1,16 +1,17 @@
 /*
  *  require jquery-ui
  *= require_self
+ * require font-awesome
  */
 
 
 @import 'variables_mixins'; // keep above bootstrap! ( used to change BS variables )
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'base'; // basic global changes to ul, li, p, etc
-@import 'components'; // buttons, dropdowns, etc.
+@import 'base'; // global changes to html elements
+@import 'components'; // buttons, dropdowns, may extend BS or be newly generated
 @import 'layout'; // global layout styles
 @import 'navbar'; // header
-@import 'utilities'; // re-usable small classes and ID's for overrides JQuery addClass etc.
+@import 'utilities'; // re-usable small classes and ID's 
 @import 'projects/index';
 @import 'projects/show';

@@ -1,10 +1,13 @@
 
+<!--projects/index-->
+
 <div class="row">
-  <h1 class="header-12-12"><i></i></h1>
-  <h1 class="header-12-12">PROJECTS</h1>
-  <h1 class="header-12-12"><i></i></h1>
+    <%= render 'shared/title', locals: { location: @location = 'PR' } %>  
+</div>
+<div class="row">
   <%= render partial: 'project', collection: @projects, as: :project %>
 </div>
+
 
 
 

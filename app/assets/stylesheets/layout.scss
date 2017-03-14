@@ -12,20 +12,21 @@
 }
 
 // for col-xs-12 col-md-12
-.header-12-12 {
+.primary-header {
   // font-family: 'Sanchez';
   @include header-font;
   @include clean-link;
   // phone
+  display: inline-block;
   margin-top: 8rem;
   font-size: 16rem;
   margin-bottom: 5rem;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: 6rem;
+  // margin-right: 6rem;
   //tablet and up
-  @include breakpoint($sm) {
-    margin-top: 6rem;
+  @include breakpoint($sm) { // over phone size
+    margin-top: 7rem;
     font-size: 6rem;
     margin-bottom: 4rem;
   }

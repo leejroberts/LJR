@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'slim', '~> 3.0', '>= 3.0.6'
 gem 'faker', '~> 1.7', '>= 1.7.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
