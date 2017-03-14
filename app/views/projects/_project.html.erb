@@ -1,0 +1,9 @@
+
+<!--project partial-->
+
+<div class="col-xs-12 col-md-6">
+  <%= link_to project_path(project) do %>
+    <%= image_tag project.image, class: 'img-project' %>
+    <h1 class='inline-block'><%= project.name %></h1>
+  <% end %>
+</div>
