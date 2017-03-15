@@ -18,17 +18,21 @@
   @include clean-link;
   // phone
   display: inline-block;
-  margin-top: 8rem;
-  font-size: 16rem;
-  margin-bottom: 5rem;
+  font-size: 10rem;
   text-align: center;
-  // margin-left: 6rem;
-  // margin-right: 6rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 4.4rem 2rem 4.3rem 2rem;
+  transition: .3s ease;
   //tablet and up
   @include breakpoint($sm) { // over phone size
     margin-top: 7rem;
     font-size: 6rem;
     margin-bottom: 4rem;
+    padding-top: 3.4rem;
+    padding-bottom: 3.9rem;
   }
 }
 

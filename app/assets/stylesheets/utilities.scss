@@ -6,5 +6,38 @@
   display: block;
 }
 
+.no-float-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.no-display {
+  display: none;
+}
+
+.transparent {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+.show-inline {
+  display: inline;
+  transition: 1s ease;
+}
+
+.p-relative {
+  position: relative;
+}
+
+// add to an empty span
+#is-mobile {
+  @include breakpoint($xs){
+    display: none;
+  }
+}
 					

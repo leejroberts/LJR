@@ -1,5 +1,7 @@
-<div class="col-xs-12 col-md-8 col-md-offset-2" >
-  <%= image_tag 'shallow-right-chevron', class: 'chevron left-chevron' %>
-  <h1 class="projects-header_index" id='header-name'>PR<span id="hidden-tail">OJECTS</span></h1>
-  <%= image_tag 'shallow-right-chevron', class: 'chevron right-chevron' %>
+<div class="col-xs-12 p-relative">
+    <%= image_tag 'shallow-right-chevron', class: 'chevron left-chevron' %>
+    <h1 class="title-text" id='header-name'><%= @head %><span class="hidden-tail"><%= @tail %></span><span id="is-mobile"></span></h1>
+    <!--<div class='gradient-blocker_title hidden' id='t-gradient'></div>-->
+    <%= image_tag 'shallow-right-chevron', class: 'chevron right-chevron' %>
+    <p class='mobile_bool'></p>
 </div>

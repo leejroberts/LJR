@@ -2,7 +2,7 @@
 <!--projects/index-->
 
 <div class="row">
-    <%= render 'shared/title', locals: { location: @location = 'PR' } %>  
+    <%= render 'shared/title', locals: { head: @head = 'PR', tail: @tail = 'OJECTS' } %>  
 </div>
 <div class="row">
   <%= render partial: 'project', collection: @projects, as: :project %>

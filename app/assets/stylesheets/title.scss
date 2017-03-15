@@ -1,0 +1,95 @@
+
+// styles for title partial
+
+
+.title-spacer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-text {
+  @extend .primary-header;
+  transition: .2s ease;
+}
+// JS addClass removes borders
+.header-shift {
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+.chevron {
+  margin-top: -3rem;
+  height: 200px;
+  width: 100px;
+  display: inline-block;
+  @include breakpoint($xs) { //phone only
+    width: 152px;
+    margin-top: -7rem;
+  }
+}
+
+.right-chevron {
+  // margin-right: 6rem;
+  margin-left: -.5rem;
+  @include breakpoint($xs) { //phone only
+    margin-left: -1.1rem;
+  }
+}
+.left-chevron {
+  margin-left: 6rem;
+  transform: rotate(180deg);
+  margin-right: -.5rem;
+  @include breakpoint($xs) { //phone only
+    margin-right: -1.1rem;
+  }
+}
+// JS addClass shifts left-chevron right
+.shift-right { 
+  transition: .5s ease;
+  margin-right: 0;
+  margin-left: 6rem;
+  @include breakpoint($xs){
+    margin-left: 3rem;
+  }
+}
+//js addClass shifts right-chevron left
+.shift-left { 
+  transition: .5s ease;
+  margin-right: 6rem;
+  margin-left: 0;
+  @include breakpoint($xs){
+    margin-right: 3rem;
+  }
+}
+
+.hidden-tail {
+  margin-bottom: -1rem;
+  text-align: left;
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 1s ease;
+   @include breakpoint($xs){
+    margin-bottom: -2rem;
+  }
+}
+
+
+// not currently in use, will add back later to finesse header 
+
+// .gradient-blocker_title {
+//   position: absolute;
+//   top: 4rem;
+//   bottom: 10rem;
+//   right: 0rem;
+//   left: -20rem;
+//   display: inline-block;
+//   height: 16rem;
+//   width: 18rem;
+//   background: linear-gradient(to right, transparent, white);
+//   transition: .5s ease;
+// }
+
+// .squish-grad {
+//   width: 0;
+// }
